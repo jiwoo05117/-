@@ -1,15 +1,15 @@
-# Project: WEEK06(4)
+# Project: WEEK06(5)
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = WEEK06(4).o
-LINKOBJ  = WEEK06(4).o
+OBJ      = WEEK06(5).o
+LINKOBJ  = WEEK06(5).o
 LIBS     = -L"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/lib" -L"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = WEEK06(4).exe
+BIN      = WEEK06(5).exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-WEEK06(4).o: WEEK06(4).c
-	$(CC) -c WEEK06(4).c -o WEEK06(4).o $(CFLAGS)
+WEEK06(5).o: WEEK06(5).c
+	$(CC) -c WEEK06(5).c -o WEEK06(5).o $(CFLAGS)
