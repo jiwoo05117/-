@@ -1,14 +1,14 @@
-# Project: week14
+# Project: WEEK14
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = "../../../Users/05112/OneDrive/바탕\ 화면/전프기\ 상어게임/sharkGame/sharkGame/board.o" "../../../Users/05112/OneDrive/바탕\ 화면/전프기\ 상어게임/sharkGame/sharkGame/main.o"
-LINKOBJ  = "../../../Users/05112/OneDrive/바탕 화면/전프기 상어게임/sharkGame/sharkGame/board.o" "../../../Users/05112/OneDrive/바탕 화면/전프기 상어게임/sharkGame/sharkGame/main.o"
-LIBS     = -L"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/lib" -L"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
-INCS     = -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
-CXXINCS  = -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/05112/새 폴더/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+OBJ      = sharkGame/sharkGame/board.o sharkGame/sharkGame/main.o
+LINKOBJ  = sharkGame/sharkGame/board.o sharkGame/sharkGame/main.o
+LIBS     = -L"C:/Users/05112/OneDrive/바탕 화면/Dev-Cpp/MinGW64/lib" -L"C:/Users/05112/OneDrive/바탕 화면/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Users/05112/OneDrive/바탕 화면/Dev-Cpp/MinGW64/include" -I"C:/Users/05112/OneDrive/바탕 화면/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/05112/OneDrive/바탕 화면/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Users/05112/OneDrive/바탕 화면/Dev-Cpp/MinGW64/include" -I"C:/Users/05112/OneDrive/바탕 화면/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/05112/OneDrive/바탕 화면/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/05112/OneDrive/바탕 화면/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
 BIN      = WEEK14.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
@@ -24,8 +24,8 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-"../../../Users/05112/OneDrive/바탕\ 화면/전프기\ 상어게임/sharkGame/sharkGame/board.o": ../../../Users/05112/OneDrive/바탕\ 화면/전프기\ 상어게임/sharkGame/sharkGame/board.c
-	$(CC) -c "../../../Users/05112/OneDrive/바탕 화면/전프기 상어게임/sharkGame/sharkGame/board.c" -o "../../../Users/05112/OneDrive/바탕 화면/전프기 상어게임/sharkGame/sharkGame/board.o" $(CFLAGS)
+sharkGame/sharkGame/board.o: sharkGame/sharkGame/board.c
+	$(CC) -c sharkGame/sharkGame/board.c -o sharkGame/sharkGame/board.o $(CFLAGS)
 
-"../../../Users/05112/OneDrive/바탕\ 화면/전프기\ 상어게임/sharkGame/sharkGame/main.o": ../../../Users/05112/OneDrive/바탕\ 화면/전프기\ 상어게임/sharkGame/sharkGame/main.c
-	$(CC) -c "../../../Users/05112/OneDrive/바탕 화면/전프기 상어게임/sharkGame/sharkGame/main.c" -o "../../../Users/05112/OneDrive/바탕 화면/전프기 상어게임/sharkGame/sharkGame/main.o" $(CFLAGS)
+sharkGame/sharkGame/main.o: sharkGame/sharkGame/main.c
+	$(CC) -c sharkGame/sharkGame/main.c -o sharkGame/sharkGame/main.o $(CFLAGS)
